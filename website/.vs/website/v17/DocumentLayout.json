@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Download.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Presentation\\sections\\Download.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\ContactUs\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\LandingPages\\ContactUs\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\Author\\sections\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\LandingPages\\Author\\sections\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\data\\designBlocksData.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Presentation\\sections\\data\\designBlocksData.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Counters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Presentation\\sections\\Counters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Presentation\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\AboutUs\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\LandingPages\\AboutUs\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\components\\BaseLayout\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\layouts\\sections\\components\\BaseLayout\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\avatar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\theme\\components\\avatar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\form\\autocomplete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\theme\\components\\form\\autocomplete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Footer.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\Author\\sections\\Footer.js",
+              "RelativeDocumentMoniker": "src\\pages\\LandingPages\\Author\\sections\\Footer.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\Author\\sections\\Footer.js",
+              "RelativeToolTip": "src\\pages\\LandingPages\\Author\\sections\\Footer.js",
+              "ViewState": "AQIAADYAAAAAAAAAAAAawGkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-22T06:49:59.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAawD0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-22T06:49:38.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "designBlocksData.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\data\\designBlocksData.js",
+              "RelativeDocumentMoniker": "src\\pages\\Presentation\\sections\\data\\designBlocksData.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\data\\designBlocksData.js",
+              "RelativeToolTip": "src\\pages\\Presentation\\sections\\data\\designBlocksData.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T04:51:51.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "routes.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\routes.js",
+              "RelativeDocumentMoniker": "src\\routes.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\routes.js",
+              "RelativeToolTip": "src\\routes.js",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T04:51:03.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Download.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Download.js",
+              "RelativeDocumentMoniker": "src\\pages\\Presentation\\sections\\Download.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Download.js",
+              "RelativeToolTip": "src\\pages\\Presentation\\sections\\Download.js",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAawJYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T19:01:57.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\index.js",
+              "RelativeDocumentMoniker": "src\\pages\\Presentation\\index.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\index.js",
+              "RelativeToolTip": "src\\pages\\Presentation\\index.js",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwEgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:55:37.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\ContactUs\\index.js",
+              "RelativeDocumentMoniker": "src\\pages\\LandingPages\\ContactUs\\index.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\ContactUs\\index.js",
+              "RelativeToolTip": "src\\pages\\LandingPages\\ContactUs\\index.js",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawEEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:54:05.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\AboutUs\\index.js",
+              "RelativeDocumentMoniker": "src\\pages\\LandingPages\\AboutUs\\index.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\LandingPages\\AboutUs\\index.js",
+              "RelativeToolTip": "src\\pages\\LandingPages\\AboutUs\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:53:56.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js",
+              "RelativeDocumentMoniker": "src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js",
+              "RelativeToolTip": "src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:53:46.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "code.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js",
+              "RelativeDocumentMoniker": "src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js",
+              "RelativeToolTip": "src\\layouts\\sections\\navigation\\navbars\\components\\NavbarDark\\code.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:53:37.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\index.html",
+              "RelativeDocumentMoniker": "public\\index.html",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\index.html",
+              "RelativeToolTip": "public\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-04T18:46:47.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Counters.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Counters.js",
+              "RelativeDocumentMoniker": "src\\pages\\Presentation\\sections\\Counters.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\pages\\Presentation\\sections\\Counters.js",
+              "RelativeToolTip": "src\\pages\\Presentation\\sections\\Counters.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T04:51:43.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\components\\BaseLayout\\index.js",
+              "RelativeDocumentMoniker": "src\\layouts\\sections\\components\\BaseLayout\\index.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\layouts\\sections\\components\\BaseLayout\\index.js",
+              "RelativeToolTip": "src\\layouts\\sections\\components\\BaseLayout\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-04T18:52:52.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "manifest.json",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\manifest.json",
+              "RelativeDocumentMoniker": "public\\manifest.json",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\public\\manifest.json",
+              "RelativeToolTip": "public\\manifest.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-04T18:50:29.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "avatar.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\avatar.js",
+              "RelativeDocumentMoniker": "src\\assets\\theme\\components\\avatar.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\avatar.js",
+              "RelativeToolTip": "src\\assets\\theme\\components\\avatar.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T21:40:55.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "autocomplete.js",
+              "DocumentMoniker": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\form\\autocomplete.js",
+              "RelativeDocumentMoniker": "src\\assets\\theme\\components\\form\\autocomplete.js",
+              "ToolTip": "C:\\Users\\moresabj\\source\\repos\\portfolio\\WebSite\\website\\src\\assets\\theme\\components\\form\\autocomplete.js",
+              "RelativeToolTip": "src\\assets\\theme\\components\\form\\autocomplete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T21:40:37.852Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+.pricing-card {
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card-header {
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.pricing-card-header-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pricing-card-price {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-card-price-currency {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.pricing-card-price-amount {
+  font-size: 3rem;
+  margin-right: 5px;
+}
+
+.pricing-card-price-period {
+  font-size: 1rem;
+}
+
+.pricing-card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pricing-card-feature-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 10px;
+}
+
+.pricing-card-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.MuiBox-root{
+  border-radius: 20px;
+}
