@@ -29,42 +29,42 @@ import GetPresentationDatasClass from "./sections/PresentationDatas/GetPresentat
 
 function BuiltByDevelopers() {
 
-    const [loading, setLoading] = useState(true);
-    const [bgImageUrl, setBgImageUrl] = useState("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg");
-    const [builtByDevelopersTitle, setBuiltByDevelopersTitle] = useState("Built by developers");
-    const [builtByDevelopersText, setBuiltByDevelopersText] = useState("                        From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components");
+        const [loading, setLoading] = useState(true);
+        const [bgImageUrl, setBgImageUrl] = useState("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg");
+        const [builtByDevelopersTitle, setBuiltByDevelopersTitle] = useState("Built by developers");
+        const [builtByDevelopersText, setBuiltByDevelopersText] = useState("                        From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components");
 
-    const editCallback = async (json, location) => {
-        const newData = [...viewDatas]; // create a copy of the original array
-        const foundModel = newData.find((model) => model.location === location);
-        if (foundModel) {
-            foundModel.data[0] = json;
+        const editCallback = async (json, location) => {
+                const newData = [...viewDatas]; // create a copy of the original array
+                const foundModel = newData.find((model) => model.location === location);
+                if (foundModel) {
+                        foundModel.data[0] = json;
+                }
+                setViewDatas(newData);
+        };
+
+        const callback = async (datas) => {
+                if (datas.length > 0) {
+                        setViewData(datas);
+                        setLoading(false);
+                }
         }
-        setViewDatas(newData);
-    };
 
-    const callback = async (datas) => {
-        if (datas.length > 0) {
-            setViewData(datas);
-            setLoading(false);
+        if (loading === true) {
+                const presentationData = new GetPresentationDatasClass();
+                presentationData.GetPresentationDatas(callback);
         }
-    }
 
-    if (loading === true) {
-        const presentationData = new GetPresentationDatasClass();
-        presentationData.GetPresentationDatas(callback);
-    }
+        const setViewData = (viewDatas) => {
+                setBgImageUrl(viewDatas?.find((model) => model.location === "backgroundImage")?.data[0] ?? bgImageUrl);
 
-    const setViewData = (viewDatas) => {
-        setBgImageUrl(viewDatas?.find((model) => model.location === "backgroundImage")?.data[0] ?? bgImageUrl);
-        
-        setBuiltByDevelopersTitle(viewDatas?.find((model) => model.location === "BuiltByDevelopersTitle")?.data[0] ?? builtByDevelopersTitle);
+                setBuiltByDevelopersTitle(viewDatas?.find((model) => model.location === "BuiltByDevelopersTitle")?.data[0] ?? builtByDevelopersTitle);
 
-        setBuiltByDevelopersText(viewDatas?.find((model) => model.location === "BuiltByDevelopersText")?.data[0] ?? builtByDevelopersText);
-    }
+                setBuiltByDevelopersText(viewDatas?.find((model) => model.location === "BuiltByDevelopersText")?.data[0] ?? builtByDevelopersText);
+        }
 
-    return (
-        <MKBox
+        return (
+                <MKBox
           display="flex"
           alignItems="center"
           borderRadius="xl"
@@ -117,9 +117,9 @@ function BuiltByDevelopers() {
                         Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
                     </MKTypography>
                 </Grid>
-            </Container>
-        </MKBox>
-    );
+            </Container> 
+            </MKBox>
+        );
 }
 
 export default BuiltByDevelopers;
