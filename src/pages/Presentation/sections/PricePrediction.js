@@ -51,7 +51,7 @@ function PricePrediction() {
     axios.post("https://localhost:7239/api/v1/ml/PricePrediction/Prediction", model)
     .then((response) => response.data)
     .then((json) => {
-      if (json.isSuccess == true) {
+      if (json.isSuccess === true) {
         withReactContent(Swal).fire({
           icon: "success",
           title: "request send",

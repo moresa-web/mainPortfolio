@@ -12,14 +12,14 @@ async function EditPresentationDatas (location, view, editCallback) {
         url: 'https://localhost:7239/api/v1/Account/isAdmin',
         withCredentials: true,
       });
-      if(request.request.status == 200)
+      if(request.request.status === 200)
         {
           withReactContent(Swal).fire({
             title: <i>Change data</i>,
             text: 'you can use html tags',
             input: 'text',
             preConfirm: () => {
-              if(Swal.getInput()?.value == "")
+              if(Swal.getInput()?.value === "")
                 {
               withReactContent(Swal).fire({
                 icon: "warning",
