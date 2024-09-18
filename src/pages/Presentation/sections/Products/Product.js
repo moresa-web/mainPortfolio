@@ -18,6 +18,8 @@ import MKPagination from "../../../../components/MKPagination";
 import ProductStyle from "../../../../assets/theme/style/ProductStyle.css";
 import ProductCart from "../../../../examples/Cards/ProductCarts/ProductCart";
 
+import GetPresentationDatasClass from "../../../../sections/PresentationDatas/GetPresentationDatas";
+
 // Images
 import Empty from "../../../../assets/images/products/Empty.jpg";
 
