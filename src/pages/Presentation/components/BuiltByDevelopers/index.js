@@ -24,15 +24,16 @@ import MKBox from "../../../../components/MKBox";
 import MKTypography from "../../../../components/MKTypography"; // Added the missing import for MKTypography component
 import bgImage from "../../../../components/MKTypography";
 
-import EditPresentationDatas from "./sections/PresentationDatas/EditPresentationDatas";
-import GetPresentationDatasClass from "./sections/PresentationDatas/GetPresentationDatas";
+import EditPresentationDatas from "../../sections/PresentationDatas/EditPresentationDatas";
+import GetPresentationDatasClass from "../../sections/PresentationDatas/GetPresentationDatas";
 
 function BuiltByDevelopers() {
 
         const [loading, setLoading] = useState(true);
         const [bgImageUrl, setBgImageUrl] = useState("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg");
         const [builtByDevelopersTitle, setBuiltByDevelopersTitle] = useState("Built by developers");
-        const [builtByDevelopersText, setBuiltByDevelopersText] = useState("                        From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components");
+        const [builtByDevelopersText, setBuiltByDevelopersText] = useState("From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components");
+        const [viewDatas, setViewDatas] = useState([]);
 
         const editCallback = async (json, location) => {
                 const newData = [...viewDatas]; // create a copy of the original array

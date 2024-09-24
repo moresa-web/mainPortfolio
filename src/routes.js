@@ -3,7 +3,7 @@
 * Mohammadreza Sardashti - v2.1.0
 =========================================================
 
-* Product Page: /pages/landing-pages/contact-us
+* Product Page: /contact-us
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -84,27 +84,27 @@ const routes = [
         collapse: [
           {
             name: "about us",
-            route: "/pages/landing-pages/about-us",
+            route: "/about-us",
             component: <AboutUs />,
           },
           {
             name: "contact us",
-            route: "/pages/landing-pages/contact-us",
+            route: "/contact-us",
             component: <ContactUs />,
           },
           {
             name: "author",
-            route: "/pages/landing-pages/author",
+            route: "/author",
             component: <Author />,
           },
           {
             name: "blog",
-            route: "/pages/landing-pages/blog",
+            route: "/blog",
             component: <BlogPage />,
           },
           {
             name: "blogPosts",
-            route: "/pages/landing-pages/blog/post",
+            route: "/blog/post",
             component: <BlogPosts />,
           },
         ],
@@ -114,17 +114,17 @@ const routes = [
         collapse: [
           {
             name: "sign in",
-            route: "/pages/authentication/sign-in",
+            route: "/sign-in",
             component: <SignIn />,
           },
           {
             name: "sign up",
-            route: "/pages/authentication/sign-up",
+            route: "/sign-up",
             component: <SignUp />,
           },
           {
             name: "verification",
-            route: "/pages/authentication/verification",
+            route: "/verification",
             component: <Verification />,
           },
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "../../../components/MKBox";
@@ -10,38 +10,50 @@ import routes from "../../../routes";
 import DefaultFooter from "../../../examples/Footers/DefaultFooter";
 import footerRoutes from "../../../footer.routes";
 
-// تصاویر پست‌ها
-import post1 from "../../../assets/images/examples/testimonial-6-2.jpg";
-import post2 from "../../../assets/images/examples/testimonial-6-3.jpg";
+import axios from "axios";
+import Cookies from "js-cookie";
+import Parser from "html-react-parser";
+
+// Images
+import Empty from "../../../assets/images/products/Empty.jpg";
 
 function BlogPage() {
-  // آرایه‌ای از پست‌های وبلاگ
-  const blogPosts = [
-    {
-      id: 1,
-      image: post1,
-      title: "Rover raised $65 million",
-      description: "Finding temporary housing for your dog should be as easy as renting an Airbnb...",
-      route: "/pages/landing-pages/blog/post?id=1",
-      isBackground: false,
-    },
-    {
-      id: 2,
-      image: post2,
-      title: "MateLabs machine learning",
-      description: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT...",
-      route: "/pages/landing-pages/blog/post?id=2",
-      isBackground: false,
-    },
-    {
-      id: 3,
-      image: post2,
-      title: "MateLabs machine learning",
-      description: "If you’ve ever wanted to train a machine learning model and integrate it with IFTTT...",
-      route: "/pages/landing-pages/blog/post?id=3",
-      isBackground: false,
-    },
-  ];
+  const defaultPosts =
+  {
+    name: "loading...",
+    data: "loading",
+    image: Empty,
+    isBackground: false
+  };
+  const defaultData = [defaultPosts, defaultPosts, defaultPosts];
+  const [blogPosts, setBlogPosts] = useState([defaultData]);
+  const [blogCount, setBlogCount] = useState(3);
+  const [status, setStatus] = useState(false);
+  const [active, setActive] = React.useState(0);
+  const [pageNumber, setPageNumber] = React.useState(0);
+
+  useEffect(() => {
+    if (!status) {
+      axios({
+        mode: 'no-cors',
+        headers: { Authorization: 'Bearer ' + Cookies.get('token') },
+        url: `https://localhost:7239/api/v1/Blog/${pageNumber}/10`,
+        withCredentials: true,
+      })
+        .then(function (response) {
+          setBlogPosts(response.data.data);
+          setStatus(true);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+  });
+
+  function shortenText(text, maxLength = 20) {
+    if(text === undefined) return;
+    return text.length <= maxLength ? text : text.substring(0, maxLength) + '...';
+}
 
   return (
     <>
@@ -49,7 +61,7 @@ function BlogPage() {
         routes={routes}
         action={{
           type: "external",
-          route: "/pages/landing-pages/contact-us",
+          route: "/contact-us",
           label: "Create WebSite",
           color: "info",
         }}
@@ -68,23 +80,22 @@ function BlogPage() {
               <Grid item xs={12} sm={6} lg={4} key={post.id}>
                 {post.isBackground ? (
                   <BackgroundBlogCard
-                    image={post.image}
-                    title={post.title}
-                    description={post.description}
+                    image={post.image ?? Empty}
+                    title={post.name}
+                    description={post.data}
                     action={{
                       type: "internal",
-                      route: post.route,
+                      route: post.url,
                       label: "read more",
                     }}
                   />
                 ) : (
                   <TransparentBlogCard
-                    image={post.image}
-                    title={post.title}
-                    description={post.description}
+                    image={post.image ?? Empty}
+                    title={shortenText(post.name)}
                     action={{
                       type: "internal",
-                      route: post.route,
+                      route: `/blog/post?name=${post.url}`,
                       color: "info",
                       label: "read more",
                     }}
