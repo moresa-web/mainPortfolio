@@ -28,6 +28,10 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "../../../../components/MKBox";
 import MKTypography from "../../../../components/MKTypography";
 
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import LazyLoad from 'react-lazy-load';
+
 function TransparentBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
     display: "flex",
@@ -47,6 +51,7 @@ function TransparentBlogCard({ image, title, description, action }) {
 
   const imageTemplate = (
     <MKBox position="relative" borderRadius="lg">
+      <LazyLoad>
       <MKBox
         component="img"
         src={image}
@@ -56,7 +61,8 @@ function TransparentBlogCard({ image, title, description, action }) {
         width="100%"
         position="relative"
         zIndex={1}
-      />
+        />
+        </LazyLoad>
       <MKBox
         borderRadius="lg"
         shadow="md"
@@ -117,8 +123,8 @@ function TransparentBlogCard({ image, title, description, action }) {
             textTransform="capitalize"
             sx={cardActionStyles}
           >
-            {action.label}
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            {action.label}
           </MKTypography>
         ) : (
           <MKTypography
@@ -132,8 +138,8 @@ function TransparentBlogCard({ image, title, description, action }) {
             textTransform="capitalize"
             sx={cardActionStyles}
           >
-            {action.label}
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            {action.label}
           </MKTypography>
         )}
       </MKBox>

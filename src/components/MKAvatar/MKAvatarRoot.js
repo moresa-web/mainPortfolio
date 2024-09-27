@@ -70,6 +70,13 @@ export default styled(Avatar)(({ theme, ownerState }) => {
         fontSize: fontSize.md,
       };
       break;
+    case "max":
+      sizeValue = {
+        width: pxToRem(400),
+        height: pxToRem(400),
+        fontSize: fontSize.md,
+      };
+      break;
     default: {
       sizeValue = {
         width: pxToRem(48),

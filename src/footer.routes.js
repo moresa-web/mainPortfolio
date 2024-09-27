@@ -8,73 +8,59 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import MKTypography from "./components/MKTypography";
 
 // Images
-import logoCT from "./assets/images/logo-ct-dark.png";
+import logo from "./assets/images/profile.webp";
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Mohammadreza Sardashti",
-    image: logoCT,
+    name: "محمدرضا سردشتی",
+    image: logo,
     route: "/",
   },
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/",
+      link: "https://www.facebook.com/moresa-web",
     },
     {
       icon: <TwitterIcon />,
-      link: "https://twitter.com/creativetim",
+      link: "https://twitter.com/moresa-web",
     },
     {
       icon: <GitHubIcon />,
-      link: "https://github.com/creativetimofficial",
+      link: "https://github.com/moresa-web",
     },
     {
       icon: <YouTubeIcon />,
-      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      link: "https://www.youtube.com/@moresa-web",
     },
   ],
   menus: [
     {
-      name: "company",
+      name: "کاربری",
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        { name: "ورود", route: "/sign-in" },
+        { name: "ثبت نام", route: "/sign-up" }
       ],
     },
     {
-      name: "resources",
+      name: "من",
       items: [
-        { name: "illustrations", href: "https://iradesign.io/" },
-        { name: "bits & snippets", href: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: "تماس با من", route: "/contact" },
+        { name: "درباره من", route: "/about" },
       ],
     },
     {
-      name: "help & support",
+      name: "دیگر لینک ها",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+        { name: "وبلاگ", route: "/blog" },
       ],
-    },
-    {
-      name: "legal",
-      items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
-      ],
-    },
+    }
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
+      تمامی حقوق محفوض است &copy; {date} {" "}
       <MKTypography
         component="a"
         href="https://www.creative-tim.com"
@@ -83,7 +69,7 @@ export default {
         variant="button"
         fontWeight="regular"
       >
-        Creative Tim
+        محمدرضا سردشتی
       </MKTypography>
       .
     </MKTypography>

@@ -33,9 +33,11 @@ import Team from "./sections/Team";
 import Featuring from "./sections/Featuring";
 import Newsletter from "./sections/Newsletter";
 
+import { Helmet } from 'react-helmet';
+
 // Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
+import routes from "../../../routes";
+import footerRoutes from "../../../footer.routes";
 
 // Images
 import bgImage from "../../../assets/images/bg-about-us.jpg";
@@ -43,12 +45,16 @@ import bgImage from "../../../assets/images/bg-about-us.jpg";
 function AboutUs() {
   return (
     <>
+    <Helmet>
+      <title>محمدرضا سردشتی | درباره من</title>
+      <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    </Helmet>
       <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
-            route: "/pages/landing-pages/contact-us",
-          label: "Create WebSite",
+            route: "/contact",
+          label: "طراحی سایت",
           color: "default",
         }}
         transparent
@@ -89,17 +95,16 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              کار با بهترین طراحی ها
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              من اینجا از بهترین طراحی های مد روز استفاده میکنم تا کاربران سایت از نگاه کردن به سایت لذت ببرند
             </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
+              ساخت اکانت
             </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
+              من را دنبال کنید در
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
               <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>

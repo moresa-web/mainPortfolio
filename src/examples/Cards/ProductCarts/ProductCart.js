@@ -15,10 +15,11 @@ import CloseIcon from "@mui/icons-material/Close";
 // Material Kit 2 PRO React components
 import MKBox from "../../../components/MKBox";
 import MKTypography from "../../../components/MKTypography";
+import { Link } from 'react-router-dom';
 
-const ProductCart = ({ title, text, image, button, price }) => {
-    const [show, setShow] = useState(false);
-    const toggleModal = () => setShow(!show);
+const ProductCart = ({ title, text, image, button, price, route }) => {
+  const [show, setShow] = useState(false);
+  const toggleModal = () => setShow(!show);
 
   return (
     <>
@@ -29,9 +30,16 @@ const ProductCart = ({ title, text, image, button, price }) => {
         <h2>{title}</h2>
         <p>{text}</p>
         <div style={{ textAlign: "left" }}>
-          <MKButton variant="outlined" color="info" onClick={toggleModal}>
-            {button}
-          </MKButton>
+          {route === null ? (
+            <MKButton variant="outlined" color="info" onClick={toggleModal}>
+              {button}
+            </MKButton>
+          ) : (
+            <Link to={route}>
+              <MKButton variant="outlined" color="info">
+                {button}
+              </MKButton>
+            </Link>)}
         </div>
       </div>
 
@@ -54,17 +62,17 @@ const ProductCart = ({ title, text, image, button, price }) => {
                 </MKBox>
                 <Divider sx={{ my: 0 }} />
                 <MKBox p={2}>
-                 <LazyLoad>
-                   <LazyLoadImage className='ModalImage' src={image} alt={title} id={title} width="100px" />
-                 </LazyLoad>
-                 <MKBox display="flex" justifyContent="space-between">
-                   <MKTypography variant="body2" color="secondary" fontWeight="regular">
-                     {text}
-                   </MKTypography>
-                   <MKTypography variant="body2" color="secondary" fontWeight="regular">
-                    {price}
-                    </MKTypography>                 
-                </MKBox>
+                  <LazyLoad>
+                    <LazyLoadImage className='ModalImage' src={image} alt={title} id={title} width="100px" />
+                  </LazyLoad>
+                  <MKBox display="flex" justifyContent="space-between">
+                    <MKTypography variant="body2" color="secondary" fontWeight="regular">
+                      {text}
+                    </MKTypography>
+                    <MKTypography variant="body2" color="secondary" fontWeight="regular">
+                      {price}
+                    </MKTypography>
+                  </MKBox>
                 </MKBox>
                 <Divider sx={{ my: 0 }} />
                 <MKBox display="flex" justifyContent="space-between" p={1.5}>

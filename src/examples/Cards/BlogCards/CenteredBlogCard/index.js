@@ -26,7 +26,7 @@ import MuiLink from "@mui/material/Link";
 // Mohammadreza Sardashti components
 import MKBox from "../../../../components/MKBox";
 import MKTypography from "../../../../components/MKTypography";
-import MKButton from "c../../../../omponents/MKButton";
+import MKButton from "../../../../components/MKButton";
 
 function CenteredBlogCard({ image, title, description, action }) {
   return (

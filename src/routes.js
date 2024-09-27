@@ -74,31 +74,31 @@ import Typography from "./layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "صفحات",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "صفحات",
         collapse: [
           {
-            name: "about us",
-            route: "/about-us",
+            name: "درباره من",
+            route: "/about",
             component: <AboutUs />,
           },
           {
-            name: "contact us",
-            route: "/contact-us",
+            name: "ارتباط با من",
+            route: "/contact",
             component: <ContactUs />,
           },
           {
-            name: "author",
+            name: "من",
             route: "/author",
             component: <Author />,
           },
           {
-            name: "blog",
+            name: "بلاگ",
             route: "/blog",
             component: <BlogPage />,
           },
@@ -106,19 +106,19 @@ const routes = [
             name: "blogPosts",
             route: "/blog/post",
             component: <BlogPosts />,
-          },
+          }
         ],
       },
       {
-        name: "account",
+        name: "اکانت",
         collapse: [
           {
-            name: "sign in",
+            name: "ورود",
             route: "/sign-in",
             component: <SignIn />,
           },
           {
-            name: "sign up",
+            name: "ثبت نام",
             route: "/sign-up",
             component: <SignUp />,
           },
@@ -133,7 +133,7 @@ const routes = [
     ],
   },
   {
-    name: "sections",
+    name: "تست",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
@@ -264,7 +264,7 @@ const routes = [
     ],
   },
   {
-    name: "docs",
+    name: "وبلاگ",
     icon: <Icon>article</Icon>,
     collapse: [
       {
@@ -290,9 +290,9 @@ const routes = [
     ],
   },
   {
-    name: "github",
+    name: "",
     icon: <GitHubIcon />,
-    href: "https://www.github.com/moresaunity",
+    href: "https://www.github.com/moresa-web",
   },
 ];
 

@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 // Mohammadreza Sardashti pages
-import AboutUs from "../../../pages/landing-pages/about-us";
+import AboutUs from "../../../../pages/LandingPages/AboutUs";
 
 export default function AboutUsPage() {
   return <AboutUs />;

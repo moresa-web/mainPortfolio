@@ -23,7 +23,7 @@ import bgImage from "../../../assets/images/city-profile.jpg";
 import Empty from "../../../assets/images/products/Empty.jpg";
 import profileImage from "../../../assets/images/profile.webp";
 
-function BlogDetailPage() {
+function ProductDetail() {
 
   const [post, setPost] = useState({
     name: "loading",
@@ -38,7 +38,7 @@ function BlogDetailPage() {
   useEffect(() => {
     axios({
       headers: { Authorization: 'Bearer ' + Cookies.get('token') },
-      url: `https://localhost:7239/api/v1/Blog/${name}`,
+      url: `https://localhost:7239/api/v1/Product/Home/${name}`,
       withCredentials: true,
     })
       .then(function (response) {
@@ -206,4 +206,4 @@ function BlogDetailPage() {
   );
 }
 
-export default BlogDetailPage;
+export default ProductDetail;

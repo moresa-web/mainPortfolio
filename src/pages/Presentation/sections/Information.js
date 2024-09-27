@@ -71,21 +71,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    کارت
                     <br />
-                    Material Kit
+                    را لمس کنید
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="تا بتوانید یک از جذابیت های css را احساس کنید شما هم میتوانید به سادگی این کارت را درست کنید. 🤩"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="صرفه جویی زمان"
+                description="شما در زمان زیادی صرفه جویی خواهید کرد که از نمونه سازی به کدهای کامل عملکردی می پردازید زیرا همه عناصر پیاده سازی شده اند."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/blog",
+                  label: "همین حالا شروع کن",
                 }}
               />
             </RotatingCard>
@@ -98,12 +98,12 @@ function Information() {
                   title={loading ? (
                     "Full Documentation"
                   ) : (
-                    <>{viewDatas?.find((model) => model.location === "D1S1Icon")?.data[0]??"Full Documentation"}</>
+                    <>{viewDatas?.find((model) => model.location === "D1S1Title")?.data[0]??"Full Documentation"}</>
                   )}
                   description={loading ? (
                     "Built by developers for developers. Check the foundation and you will findeverything inside our documentation."
                   ) : (
-                    <>{viewDatas?.find((model) => model.location === "D1S1Icon")?.data[0]??"Built by developers for developers. Check the foundation and you will findeverything inside our documentation."}</>
+                    <>{viewDatas?.find((model) => model.location === "D1S1Text")?.data[0]??"Built by developers for developers. Check the foundation and you will findeverything inside our documentation."}</>
                   )}
                 />
               </Grid>

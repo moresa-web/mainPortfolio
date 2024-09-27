@@ -13,6 +13,11 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import { useState } from "react";
+
+import axios from "axios";
+import Cookies from "js-cookie";
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -26,72 +31,69 @@ import TransparentBlogCard from "../../../../examples/Cards/BlogCards/Transparen
 import BackgroundBlogCard from "../../../../examples/Cards/BlogCards/BackgroundBlogCard";
 
 // Images
-import post1 from "../../../../assets/images/examples/testimonial-6-2.jpg";
-import post2 from "../../../../assets/images/examples/testimonial-6-3.jpg";
-import post3 from "../../../../assets/images/examples/blog-9-4.jpg";
+import Empty from "../../../../assets/images/products/Empty.jpg";
 import post4 from "../../../../assets/images/examples/blog2.jpg";
 
+import { motion } from 'framer-motion';
+import Parser from "html-react-parser";
+
+import ProductCart from "../../../../examples/Cards/ProductCarts/ProductCart";
+
 function Places() {
+  const defaultPosts =
+  {
+    name: "loading...",
+    data: "loading",
+    image: Empty
+  };
+  const defaultData = [defaultPosts, defaultPosts, defaultPosts];
+  const [blogPosts, setBlogPosts] = useState([defaultData]);
+  const [status, setStatus] = useState(false);
+  const [pageNumber, setPageNumber] = useState(0);
+
+  if (!status) {
+    axios({
+      mode: 'no-cors',
+      headers: { Authorization: 'Bearer ' + Cookies.get('token') },
+      url: `https://localhost:7239/api/v1/Blog/${pageNumber}/4`,
+      withCredentials: true,
+    })
+      .then(function (response) {
+        setBlogPosts(response.data.data);
+        setStatus(true);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
   return (
     <MKBox component="section" py={2}>
       <Container>
         <Grid container item xs={12} lg={6}>
           <MKTypography variant="h3" mb={6}>
-            Check my latest blogposts
+            آخرین مقالات من
           </MKTypography>
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} lg={3}>
-            <TransparentBlogCard
-              image={post1}
-              title="Rover raised $65 million"
-              description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                color: "info",
-                label: "read more",
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <TransparentBlogCard
-              image={post2}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                color: "info",
-                label: "read more",
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <TransparentBlogCard
-              image={post3}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                color: "info",
-                label: "read more",
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
-              image={post4}
-              title="Flexible work hours"
-              description="Rather than worrying about switching offices every couple years, you stay in the same place."
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                label: "read more",
-              }}
-            />
-          </Grid>
+          {blogPosts.map((post, i) => (
+            <Grid item xs={12} md={6} lg={4} key={i}>
+              <MKBox mt={3}>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                >
+                  <ProductCart
+                    title={post.name}
+                    text={post.data ? Parser(post.data.slice(0, 140)) : 'loading...'}
+                    image={post.image ?? Empty}
+                    button="Detail"
+                    route={"/blog/post?name=" + post.url}
+                  />
+                </motion.div>
+              </MKBox>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </MKBox>
@@ -99,3 +101,16 @@ function Places() {
 }
 
 export default Places;
+
+// <Grid item xs={12} sm={6} lg={3}>
+//   <TransparentBlogCard
+//     image={post.image ?? Empty}
+//     title={post.name}
+//     action={{
+//       type: "internal",
+//       route: `/blog/post?name=${post.url}`,
+//       color: "info",
+//       label: "بیشتر بخوانید",
+//     }}
+//   />
+// </Grid>

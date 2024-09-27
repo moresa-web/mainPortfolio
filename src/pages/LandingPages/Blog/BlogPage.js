@@ -12,7 +12,11 @@ import footerRoutes from "../../../footer.routes";
 
 import axios from "axios";
 import Cookies from "js-cookie";
+
+import { motion } from 'framer-motion';
 import Parser from "html-react-parser";
+
+import ProductCart from "../../../examples/Cards/ProductCarts/ProductCart";
 
 // Images
 import Empty from "../../../assets/images/products/Empty.jpg";
@@ -50,19 +54,14 @@ function BlogPage() {
     }
   });
 
-  function shortenText(text, maxLength = 20) {
-    if(text === undefined) return;
-    return text.length <= maxLength ? text : text.substring(0, maxLength) + '...';
-}
-
   return (
     <>
       <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
-          route: "/contact-us",
-          label: "Create WebSite",
+          route: "/contact",
+          label: "طراحی سایت",
           color: "info",
         }}
       />
@@ -71,37 +70,30 @@ function BlogPage() {
           <Grid container justifyContent="center">
             <Grid item xs={12} lg={8}>
               <MKTypography variant="h3" mb={6} align="center">
-                Latest Blog Posts
+                آخرین مقالات من
               </MKTypography>
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            {blogPosts.map((post) => (
-              <Grid item xs={12} sm={6} lg={4} key={post.id}>
-                {post.isBackground ? (
-                  <BackgroundBlogCard
-                    image={post.image ?? Empty}
-                    title={post.name}
-                    description={post.data}
-                    action={{
-                      type: "internal",
-                      route: post.url,
-                      label: "read more",
-                    }}
-                  />
-                ) : (
-                  <TransparentBlogCard
-                    image={post.image ?? Empty}
-                    title={shortenText(post.name)}
-                    action={{
-                      type: "internal",
-                      route: `/blog/post?name=${post.url}`,
-                      color: "info",
-                      label: "read more",
-                    }}
-                  />
-                )}
+            {blogPosts.map((post, i) => (
+              <Grid item xs={12} md={6} lg={4} key={i}>
+                <MKBox mt={3}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                  >
+                    <ProductCart
+                      title={post.name}
+                      text={post.data ? Parser(post.data.slice(0, 140)) : 'loading...'}
+                      image={post.image ?? Empty}
+                      button="Detail"
+                      route={"/blog/post?name=" + post.url}
+                    />
+                  </motion.div>
+                </MKBox>
               </Grid>
+
             ))}
           </Grid>
         </Container>

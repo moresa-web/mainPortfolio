@@ -112,7 +112,8 @@ function Product() {
               image={object.images[0]??Empty}
               button="Detail"
               price={object.price}
-            />          
+              route={null}
+              />          
             </motion.div>
         </MKBox>
       </Grid>
@@ -120,14 +121,14 @@ function Product() {
       </Grid>
       <Grid container item justifyContent="center" xs={12} lg={6} mx="auto" height="100%">
         <MKPagination>
-          <MKPagination onClick={() => PaginateHandle(pageNumber - 1)} item>
-            <Icon>keyboard_arrow_left</Icon>
+            <MKPagination onClick={() => PaginateHandle(pageNumber + 1)} item>
+            <Icon>keyboard_arrow_right</Icon>
           </MKPagination>
           {Array(Math.ceil(productsCount / 3)).fill().map((_, index) => (
   <MKPagination onClick={() => PaginateHandle(index + 1)} item key={index} active={index === active}>{index + 1}</MKPagination>
 ))}
-            <MKPagination onClick={() => PaginateHandle(pageNumber + 1)} item>
-            <Icon>keyboard_arrow_right</Icon>
+          <MKPagination onClick={() => PaginateHandle(pageNumber - 1)} item>
+            <Icon>keyboard_arrow_left</Icon>
           </MKPagination>
         </MKPagination>
       </Grid>
