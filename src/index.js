@@ -16,10 +16,8 @@ Coded by www.creative-tim.com
 import React from "react";
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import InputVerification from "./assets/theme/style/InputVerification.css";
+import "./assets/theme/style/InputVerification.css";
 import App from "./App";
-
-import ScriptTag from 'react-script-tag';
 
 const container = document.getElementById("root");
 
